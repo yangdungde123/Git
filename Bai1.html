@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    
+</head>
+<style type="text/css">
+	.btn{
+		width: 400px;
+		height: 50px;
+		margin: 10px;
+	}
+	.login-btn{
+		width: 150px;
+		height: 40px;
+	}
+</style>
+<body>
+	<div class="col-md-12">
+		<div class="col-md-3"></div>
+		<div class="col-md-6" style="text-align: center;">
+			<!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#xemTKB">Xem TKB</button>
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Nhập TKB</button>
+			<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Sửa TKB</button>
+			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Xóa TKB</button>-->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="height: 250px;">
+            	<div class="modal-header" style="background-color: #0065B3; color: #fff">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">LOGIN AS</h4>
+                        </div>
+		        <div class="modal-body" style="text-align: center;">
+                    <button type="button" class="btn btn-default login-btn" data-toggle="modal" data-target="#giaoVuKhoaModal">Giáo vụ khoa</button>
+                    <button type="button" class="btn btn-default login-btn" data-toggle="modal" data-target="#xemTKB-GV" >Giảng viên</button>
+                    <button type="button" class="btn btn-default login-btn" data-toggle="modal" data-target="#xemTKB-SV" >Sinh viên</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="giaoVuKhoaModal" role="dialog" style="right: 300px;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="height: 400px; width: 700px;">
+            	<div class="modal-header" style="background-color: #0065B3; color: #fff">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Giáo vụ khoa</h4>
+                        </div>
+		        <div class="modal-body" style="text-align: center;">
+                    <div class="tabbable boxed parentTabs">
+    <ul class="nav nav-tabs">
+        <li class="active col-md-3"><a href="#set1">Xem TKB</a>
+        </li>
+        <li class="col-md-3"><a href="#set2">Sửa TKB</a>
+        <li class="col-md-3"><a href="#set3">Thêm TKB</a>
+        <li class="col"><a href="#set4">Xóa TKB</a>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="set1">
+        	<div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub11">TKB Giảng viên</a>
+                    </li>
+                    <li><a href="#sub12">TKB Sinh viên</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub11">
+                        <table class="table table-striped">
+						<thead>
+							<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						</tr>
+						</tbody>
+					</table>
+                    </div>
+                    <div class="tab-pane fade" id="sub12">
+                        <table class="table table-striped">
+						<thead>
+							<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						</tr>
+						</tbody>
+					</table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="set2">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub21">TKB Giảng viên</a>
+                    </li>
+                    <li><a href="#sub22">TKB Sinh viên</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub21">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">LƯU</button>
+                    </div>
+                    <div class="tab-pane fade" id="sub22">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">LƯU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="set3">
+        	<div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub31">TKB Giảng viên</a>
+                    </li>
+                    <li><a href="#sub32">TKB Sinh viên</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub31">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">THÊM</button>
+                    </div>
+                    <div class="tab-pane fade" id="sub32">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">THÊM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="set4">
+        	<div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub41">TKB Giảng viên</a>
+                    </li>
+                    <li><a href="#sub42">TKB Sinh viên</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub41">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">XÓA</button>
+                    </div>
+                    <div class="tab-pane fade" id="sub42">
+                        <table class="table table-striped">
+							<thead>
+								<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							</tbody>
+						</table>
+						<button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">XÓA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+       
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="xemTKB-GV" role="dialog" style="right: 300px;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="height: 330px; width: 700px;">
+            	<div class="modal-header" style="background-color: #0065B3; color: #fff">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">TKB Giảng viên</h4>
+                        </div>
+		        <div class="modal-body" style="text-align: center;">
+                    <table class="table table-striped">
+						<thead>
+							<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						</tr>
+						<tr>
+							<td>Mary</td>
+							<td>Moe</td>
+							<td>mary@example.com</td>
+						</tr>
+						<tr>
+							<td>July</td>
+							<td>Dooley</td>
+							<td>july@example.com</td>
+						</tr>
+						</tbody>
+					</table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="xemTKB-SV" role="dialog" style="right: 300px;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="height: 330px; width: 700px;">
+            	<div class="modal-header" style="background-color: #0065B3; color: #fff">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">TKB Sinh viên</h4>
+                        </div>
+		        <div class="modal-body" style="text-align: center;">
+                    <table class="table table-striped">
+						<thead>
+							<tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						</tr>
+						<tr>
+							<td>Mary</td>
+							<td>Moe</td>
+							<td>mary@example.com</td>
+						</tr>
+						<tr>
+							<td>July</td>
+							<td>Dooley</td>
+							<td>july@example.com</td>
+						</tr>
+						</tbody>
+					</table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn blue btn-sm" data-dismiss="modal" style="width: 80px; height: 40px;">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+function myFunction() {
+    alert("Không được phân quyền!");
+};
+    $("ul.nav-tabs a").click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+
+</script>
+</html>
