@@ -1,2 +1,5 @@
 # Git
-Description
+
+1 Goals
+
+2 Business Objectives
